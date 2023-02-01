@@ -1,0 +1,6 @@
+{% extends "templates/base.html" %}
+{% load crispy_forms_tags}
+{% block  content %}
+<h1>already have an account</h1>
+<div><a href="{% url 'login' %}">Login again</a></div>
+{% endblock content%}

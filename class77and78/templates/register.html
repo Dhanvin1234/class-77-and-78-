@@ -1,0 +1,21 @@
+{% extends "templates/base.html" %}
+{% load crispy_forms_tags}
+{% block  content %}
+<div>
+    <form method="post">
+        <fieldset class="field">
+            {{form | crispy}}
+        </fieldset>
+        <div>
+            <p>Sign up</p>
+            <button class="submit">
+                Submit
+            </button>
+        </div>
+
+    </form>
+<div class="contained">
+    <p>Already have an acount</p>
+</div>
+</div>
+{% endblock content %}
